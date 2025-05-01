@@ -1,23 +1,12 @@
-import Real from "../assets/Real.svg";
-import Simulation from "../assets/Simulation.svg";
-import Ideas from "../assets/Ideas.svg";
-import Plastic from "../assets/Plastic.svg";
-import River from "../assets/River.svg";
-import Pollution from "../assets/Pollution.svg";
-import SDG from "../assets/SDG.svg";
-import Chemistry from "../assets/Chemistry.svg";
-import Instagram from "/images/Instagram.jpg";
-import Gmail from "/images/gmail.jpg";
-
 const words = [
-  { text: "Real", imgPath: {Real} },
-  { text: "Simulation", imgPath: {Simulation} },
-  { text: "Ideas", imgPath: {Ideas} },
-  { text: "Plastic", imgPath: Plastic },
-  { text: "River", imgPath: {River} },
-  { text: "pollution", imgPath: {Pollution} },
-  { text: "SDGs", imgPath: {SDG} },
-  { text: "Chemistry", imgPath: {Chemistry} },
+  { text: "Real", imgPath: "../assets/Real.svg" },
+  { text: "Simulation", imgPath: "../assets/Simulation.svg" },
+  { text: "Ideas", imgPath: "../assets/Ideas.svg" },
+  { text: "Plastic", imgPath: "../assets/Plastic.svg" },
+  { text: "River", imgPath: "../assets/River.svg" },
+  { text: "pollution", imgPath: "../assets/Pollution.svg" },
+  { text: "SDGs", imgPath: "../assets/SDG.svg" },
+  { text: "Chemistry", imgPath: "../assets/Chemistry.svg" },
 ];
 
 const counterItems = [
@@ -101,11 +90,11 @@ const expCards = [
 const socialImgs = [
   {
     name: "instagram",
-    imgPath: {Instagram},
+    imgPath: "/images/Instagram.jpg",
   },
   {
     name: "mail",
-    imgPath: {Gmail},
+    imgPath: "/images/gmail.jpg",
   },
 ];
 
