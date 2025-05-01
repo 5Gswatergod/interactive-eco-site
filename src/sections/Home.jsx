@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter.jsx';
 import NavBar from '../components/NavBar.jsx';
+import FlaskSVG from '../assets/flask.svg';
 
 const Home = () => {
     useGSAP(() => {
@@ -39,7 +40,7 @@ const Home = () => {
     return (
         <section id="intro" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10">
-                <img src="src/assets/flask.svg" alt="Flask" />
+                <img src={FlaskSVG} alt="Flask" />
             </div>
 
             <div className="hero-layout">
