@@ -26,8 +26,7 @@ const navLinks = [
 
 const expCards = [
   {
-    review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Demo",
     imgPath: "",
     logoPath: "",
     title: "Frontend Developer",
@@ -39,8 +38,7 @@ const expCards = [
     ],
   },
   {
-    review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Demo",
     imgPath: "",
     logoPath: "",
     title: "Full Stack Developer",
@@ -52,11 +50,34 @@ const expCards = [
     ],
   },
   {
-    review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Demo",
     imgPath: "",
     logoPath: "",
-    title: "React Native Developer",
+    title: "Demo",
+    date: "March 2019 - May 2020",
+    responsibilities: [
+      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
+      "Improved app performance and user experience through code optimization and testing.",
+      "Coordinated with the product team to implement features based on feedback.",
+    ],
+  },
+  {
+    review: "Demo",
+    imgPath: "",
+    logoPath: "",
+    title: "Demo",
+    date: "March 2019 - May 2020",
+    responsibilities: [
+      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
+      "Improved app performance and user experience through code optimization and testing.",
+      "Coordinated with the product team to implement features based on feedback.",
+    ],
+  },
+  {
+    review: "Demo",
+    imgPath: "",
+    logoPath: "",
+    title: "Demo",
     date: "March 2019 - May 2020",
     responsibilities: [
       "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
@@ -66,10 +87,22 @@ const expCards = [
   },
 ];
 
+const socialImgs = [
+  {
+    name: "instagram",
+    imgPath: "/images/Instagram.jpg",
+  },
+  {
+    name: "mail",
+    imgPath: "/images/gmail.jpg",
+  },
+];
+
 export
 {
     words,
     counterItems,
     navLinks,
-    expCards
+    expCards,
+    socialImgs
 };

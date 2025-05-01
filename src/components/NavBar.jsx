@@ -33,6 +33,12 @@ const NavBar = () => {
                     ))}
                 </ul>
             </nav>
+
+            <a href="https://readymag.website/u703636081/5472204/" className="contact-btn group">
+            <div className="inner">
+                <span>Eco Current</span>
+            </div>
+            </a>
         </div>
     </header>
   )
