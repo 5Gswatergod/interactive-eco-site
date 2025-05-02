@@ -1,6 +1,6 @@
 import React from 'react'
 import { counterItems } from '../constants/index.js'
-import Countup from 'react-countup'
+import CountUp from 'react-countup'
 
 const AnimatedCounter = () => {
 return (
@@ -9,11 +9,11 @@ return (
             {counterItems.map((item) => (
                 <div className='counter-number bg-zinc-900 rounded-lg p-10 flex flex-col justify-center gap-12' key={item.label}>
                     <div className='counter-number text-white text-5xl font-bold mb-2'>
-                        <Countup end={item.count} duration={2} delay={0} className='text-5xl font-bold mb-2' />
+                        {item.label}
                     </div>
                     <div className="counter-image relative w-40 h-40 rounded-full overflow-hidden shadow-lg bg-[#134e4a]">
                         <img
-                            src={`/images/${encodeURIComponent(item.name)}.jpg`}
+                            src={`images/${encodeURIComponent(item.name)}.jpg`}
                             alt={`${item.name}`}
                             className="w-full h-full object-cover object-top"
                         />

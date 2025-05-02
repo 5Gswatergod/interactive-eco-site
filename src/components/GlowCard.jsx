@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import FlaskImg from '/images/flask.svg'
 
 const GlowCard = ({card, children, index}) => {
     const cardRefs = useRef([]);
@@ -23,7 +24,7 @@ const GlowCard = ({card, children, index}) => {
         <div className='glow' />
         <div className='flex items-center gap-1 mb-5'>
             {Array.from({length: 5}, (_, i) => (
-                <img src="/images/star.png" key={i} alt="star"/>
+                <img src={FlaskImg} key={i} alt="star"/>
             ))}
         </div>
         <div className='mb-5'>

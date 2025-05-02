@@ -4,6 +4,7 @@ import HeroExperience from '../components/HeroModel/HeroExperience.jsx';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter.jsx';
+import BgImg from '/images/bg.png';
 
 const Home = () => {
     useGSAP(() => {
@@ -38,7 +39,7 @@ const Home = () => {
     return (
         <section id="intro" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10">
-                <img src="../assets/flask.svg" alt="Flask" />
+                <img src={BgImg} alt="Background" />
             </div>
 
             <div className="hero-layout">

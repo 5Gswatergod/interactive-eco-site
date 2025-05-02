@@ -9,9 +9,10 @@ Title: LowPoly - Flask
 
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
+import flaskUrl from '/models/lowpoly-flask.glb?url'
 
 export function Flask(props) {
-  const { nodes, materials } = useGLTF('/models/lowpoly-flask.glb')
+  const { nodes, materials } = useGLTF(flaskUrl)
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -23,4 +24,4 @@ export function Flask(props) {
   )
 }
 
-useGLTF.preload('/models/lowpoly-flask.glb')
+useGLTF.preload(flaskUrl)

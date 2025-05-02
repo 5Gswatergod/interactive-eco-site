@@ -1,12 +1,12 @@
 const words = [
-  { text: "Real", imgPath: "../assets/Real.svg" },
-  { text: "Simulation", imgPath: "../assets/Simulation.svg" },
-  { text: "Ideas", imgPath: "../assets/Ideas.svg" },
-  { text: "Plastic", imgPath: "../assets/Plastic.svg" },
-  { text: "River", imgPath: "../assets/River.svg" },
-  { text: "pollution", imgPath: "../assets/Pollution.svg" },
-  { text: "SDGs", imgPath: "../assets/SDG.svg" },
-  { text: "Chemistry", imgPath: "../assets/Chemistry.svg" },
+  { text: "Real", imgPath: "images/Real.svg" },
+  { text: "Simulation", imgPath: "images/Simulation.svg" },
+  { text: "Ideas", imgPath: "images/Ideas.svg" },
+  { text: "Plastic", imgPath: "images/Plastic.svg" },
+  { text: "River", imgPath: "images/River.svg" },
+  { text: "pollution", imgPath: "images/Pollution.svg" },
+  { text: "SDGs", imgPath: "images/SDG.svg" },
+  { text: "Chemistry", imgPath: "images/Chemistry.svg" },
 ];
 
 const counterItems = [
