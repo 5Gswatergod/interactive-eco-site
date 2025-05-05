@@ -1,3 +1,12 @@
+/* Mobile edge glow animation */
+@keyframes edgeFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
@@ -66,7 +75,7 @@ section {
     }
 
     .grid-3-cols {
-        @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+        @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6;
     }
 
     .grid-3-cols-md-tight {
@@ -74,7 +83,7 @@ section {
     }
 
     .grid-4-cols {
-        @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+        @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7;
     }
 
     .grid-12-cols {
@@ -82,7 +91,7 @@ section {
     }
 
     .hero-layout {
-        @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+        @apply mt-20 md:mt-32 xl:mt-20 h-[80vh] md:h-dvh flex xl:items-center items-start justify-center relative z-10;
     }
 
     .hero-text {
@@ -148,7 +157,7 @@ section {
             @apply flex;
 
             .inner {
-                @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+                @apply px-4 py-2 text-sm md:text-base rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
 
                 span {
                     @apply group-hover:text-white transition-colors duration-300;
@@ -217,7 +226,7 @@ section {
         }
 
         .text {
-            @apply uppercase md:text-lg text-black transition-all duration-500 group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+            @apply uppercase text-sm md:text-lg text-black transition-all duration-500 group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
         }
 
         .arrow-wrapper {
@@ -300,7 +309,7 @@ section {
         @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
         .footer-container {
-            @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+            @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-0 w-full;
         }
 
         p {
@@ -473,4 +482,40 @@ section {
 
 .card:hover::before {
     opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .hero-text {
+    font-size: 20px;
+  }
+
+  .cta-button .text {
+    font-size: 12px;
+  }
+
+  .tech-card-content p {
+    font-size: 14px;
+  }
+
+  .navbar .logo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-glow-edge {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    background-image: linear-gradient(120deg, #0f766e, #134e4a);
+    background-size: 200% 200%;
+    animation: edgeFlow 6s linear infinite;
+    padding: 2px;
+  }
+
+  .mobile-glow-edge > * {
+    border-radius: 0.875rem;
+    background-color: black;
+    padding: 1rem;
+  }
 }

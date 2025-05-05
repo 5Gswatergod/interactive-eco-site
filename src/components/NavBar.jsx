@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { navLinks } from '../constants/index.js'
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     const [scrolled, setScrolled] = useState(false)
@@ -17,7 +18,7 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
         <div className='inner'>
-            <a className='logo' href='#hero'>
+            <a className='logo' href='#intro'>
                 Eco Chemists
             </a>
 
@@ -25,10 +26,10 @@ const NavBar = () => {
                 <ul>
                     {navLinks.map(({ name, link }) => (
                         <li key={name} className='group'>
-                            <a href={link}>
+                            <Link to={link} className='nav-link'>
                                 <span>{name}</span>
                                 <span className='underline'></span>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

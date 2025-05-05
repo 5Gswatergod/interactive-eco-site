@@ -10,25 +10,25 @@ const words = [
 ];
 
 const counterItems = [
-  { label: 1, job: "jobtitle", name: "Inpug", surname: "Chen" },
-  { label: 2, job: "jobtitle", name: "Eric", surname: "Tzeng" },
-  { label: 3, job: "jobtitle", name: "Eason", surname: "Lo" },
+  { label: 1, job: "Art Director", name: "Inpug", surname: "Chen" },
+  { label: 2, job: "Project Reasercher", name: "Eric", surname: "Tzeng" },
+  { label: 3, job: "Website Engineer", name: "Eason", surname: "Lo" },
 ];
 
 const navLinks = [
-  { name: "Home", link: "#Home" },
-  { name: "Eco System", link: "#Eco-system" },
-  { name: "Grography", link: "#Geography" },
-  { name: "Chemistry", link: "#Chemistry" },
-  { name: "Reflection", link: "#Reflection" },
-  { name: "Resources", link: "#Resources" },
+  { name: "Home", link: "/" },
+  { name: "Eco System", link: "/Ecosystem" },
+  { name: "Grography", link: "/Geography" },
+  { name: "Chemistry", link: "/Chemistry" },
+  { name: "Reflection", link: "/Reflection" },
+  { name: "Resources", link: "/Resources" },
 ];
 
 const expCards = [
   {
-    review: "Demo",
-    imgPath: "",
-    logoPath: "",
+    review: "Project Planning",
+    imgPath: null,
+    logoPath: null,
     title: "Frontend Developer",
     date: "January 2023 - Present",
     responsibilities: [
@@ -38,9 +38,9 @@ const expCards = [
     ],
   },
   {
-    review: "Demo",
-    imgPath: "",
-    logoPath: "",
+    review: "Poster #1",
+    imgPath: null,
+    logoPath: null,
     title: "Full Stack Developer",
     date: "June 2020 - December 2023",
     responsibilities: [
@@ -50,9 +50,9 @@ const expCards = [
     ],
   },
   {
-    review: "Demo",
-    imgPath: "",
-    logoPath: "",
+    review: "Poster #2",
+    imgPath: null,
+    logoPath: null,
     title: "Demo",
     date: "March 2019 - May 2020",
     responsibilities: [
@@ -62,10 +62,10 @@ const expCards = [
     ],
   },
   {
-    review: "Demo",
-    imgPath: "",
-    logoPath: "",
-    title: "Demo",
+    review: "Poster #3",
+    imgPath: null,
+    logoPath: null,
+    title: "Nothing",
     date: "March 2019 - May 2020",
     responsibilities: [
       "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
@@ -74,10 +74,10 @@ const expCards = [
     ],
   },
   {
-    review: "Demo",
-    imgPath: "",
-    logoPath: "",
-    title: "Demo",
+    review: "Websites",
+    imgPath: null,
+    logoPath: null,
+    title: "IDK",
     date: "March 2019 - May 2020",
     responsibilities: [
       "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
@@ -90,11 +90,11 @@ const expCards = [
 const socialImgs = [
   {
     name: "instagram",
-    imgPath: "/images/Instagram.jpg",
+    imgPath: "images/Instagram.jpg",
   },
   {
     name: "mail",
-    imgPath: "/images/gmail.jpg",
+    imgPath: "images/gmail.jpg",
   },
 ];
 

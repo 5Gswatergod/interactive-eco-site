@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import FlaskImg from '/images/flask.svg'
+import star from '/images/star.png'
 
 const GlowCard = ({card, children, index}) => {
     const cardRefs = useRef([]);
@@ -20,17 +20,19 @@ const GlowCard = ({card, children, index}) => {
     }
 
   return (
-    <div ref={(el) => (cardRefs.current[index] = el)} onMouseMove={handleMouseMove(index)} className='card card-border timeline-card rounded-xl p-10'>
-        <div className='glow' />
-        <div className='flex items-center gap-1 mb-5'>
-            {Array.from({length: 5}, (_, i) => (
-                <img src={FlaskImg} key={i} alt="star"/>
-            ))}
-        </div>
-        <div className='mb-5'>
-            <p className='text-white-50 text-lg'>{card.review}</p>
-        </div>
-        {children}
+    <div className="mobile-glow-edge">
+      <div ref={(el) => (cardRefs.current[index] = el)} onMouseMove={handleMouseMove(index)} className='card card-border timeline-card rounded-xl p-10'>
+          <div className='glow' />
+          <div className='flex items-center gap-1 mb-5'>
+              {Array.from({length: 5}, (_, i) => (
+                  <img src={star} key={i} alt="star"/>
+              ))}
+          </div>
+          <div className='mb-5'>
+              <p className='text-white-50 text-lg'>{card.review}</p>
+          </div>
+          {children}
+      </div>
     </div>
   )
 }

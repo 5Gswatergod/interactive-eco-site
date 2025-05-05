@@ -5,6 +5,9 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter.jsx';
 import BgImg from '/images/bg.png';
+import NavBar from '../components/NavBar.jsx';
+import Timeline from '../sections/Timeline.jsx';
+import Footer from '../components/Footer.jsx';
 
 const Home = () => {
     useGSAP(() => {
@@ -38,6 +41,7 @@ const Home = () => {
 
     return (
         <section id="intro" className="relative overflow-hidden">
+            <NavBar />
             <div className="absolute top-0 left-0 z-10">
                 <img src={BgImg} alt="Background" />
             </div>
@@ -83,6 +87,8 @@ const Home = () => {
             </div>
             
             <AnimatedCounter/>
+            <Timeline />
+            <Footer />
         </section>
     )
 }

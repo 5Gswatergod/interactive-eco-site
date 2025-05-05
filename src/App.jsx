@@ -1,16 +1,23 @@
-import Home from './sections/Home.jsx'
-import NavBar from './components/NavBar.jsx'
-import Timeline from './sections/Timeline.jsx'
-import Footer from './sections/Footer.jsx'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Home  from './pages/Home.jsx'
+import Ecosystem from './pages/Ecosystem.jsx'
+import Chemistry from './pages/Chemistry.jsx'
+import Geography from './pages/Geography.jsx'
+import Reflection from './pages/Reflection.jsx'
+import Resources from './pages/Resources.jsx'
 
 const App = () => {
   return (
-    <>
-      <NavBar />
-      <Home />
-      <Timeline />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="*" element={<Home />}/>
+        <Route path="/Ecosystem" element={<Ecosystem />}/>
+        <Route path="/Geography" element={<Geography />}/>
+        <Route path="/Chemistry" element={<Chemistry />}/>
+        <Route path="/Reflection" element={<Reflection />}/>
+        <Route path="/Resources" element={<Resources />}/>
+      </Routes>
+    </Router>
   )
 }
 
