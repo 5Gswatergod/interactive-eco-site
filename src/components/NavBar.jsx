@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { navLinks } from '../constants/index.js'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FiMenu, FiX } from 'react-icons/fi'
 import gsap from 'gsap'
 
@@ -8,6 +8,7 @@ const NavBar = () => {
     const [scrolled, setScrolled] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
     const mobileNavRef = useRef(null)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const handleScroll = () =>{
@@ -72,7 +73,18 @@ const NavBar = () => {
                 <ul className='flex flex-col gap-4'>
                   {navLinks.map(({ name, link }) => (
                     <li key={name}>
-                      <Link to={link} className='nav-link' onClick={() => setMenuOpen(false)}>
+                      <Link
+                        to={link}
+                        className='nav-link'
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setMenuOpen(false);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                          setTimeout(() => {
+                            navigate(link);
+                          }, 400); // delay allows scroll to complete
+                        }}
+                      >
                         {name}
                       </Link>
                     </li>

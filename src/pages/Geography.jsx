@@ -60,10 +60,9 @@ const Geography = () => {
         <img
           src={Huajiang}
           alt="Huajiang"
-          className="w-full object-cover"
-        />
+          className="w-full object-cover"/>
       </div>
-      <div className="hero-layout-left">
+      <div className="hero-layout">
           {/*LEFT: CONTENTS */}
           <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
               <div className="flex flex-col gap-7">

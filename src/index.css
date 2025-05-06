@@ -1154,29 +1154,6 @@ section {
         }
     }
 
-    .hero-layout-left {
-        position: relative;
-        z-index: 10;
-        margin-top: calc(var(--spacing) * 20);
-        display: flex;
-        height: auto;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-inline: calc(var(--spacing) * 5);
-
-        @media (width >=48rem) {
-            margin-top: calc(var(--spacing) * 32);
-        }
-
-        @media (width >=48rem) {
-            padding-inline: calc(var(--spacing) * 20);
-        }
-
-        @media (width >=80rem) {
-            margin-top: calc(var(--spacing) * 20);
-        }
-    }
-
     .hero-text {
         pointer-events: none;
         position: relative;
