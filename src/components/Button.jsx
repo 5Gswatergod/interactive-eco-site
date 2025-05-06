@@ -6,9 +6,9 @@ const Button = ({text, className, id }) => {
     <a onClick={(e) => {
         e.preventDefault();
 
-        const target = document.getElementById('counter');
+        const target = document.getElementById(id);
 
-        if(target && id){
+        if(target){
           const offset = window.innerHeight * 0.15;
 
           const top = target.getBoundingClientRect().top + window.scrollY - offset;
@@ -22,7 +22,7 @@ const Button = ({text, className, id }) => {
     className={`${className ?? ''} cta-wrapper`}>
         <div className='cta-button group'>
             <div className='bg-circle'/>
-            <p className='text'>Explore Porject!</p>
+            <p className='text'>{text}</p>
             <div className='arrow-wrapper'>
                 <img src={arrowDown} alt="arrow" />
             </div>

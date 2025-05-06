@@ -1,12 +1,34 @@
-const words = [
+const HomeWords = [
   { text: "Real", imgPath: "images/Real.svg" },
-  { text: "Simulation", imgPath: "images/Simulation.svg" },
+  { text: "Compound", imgPath: "images/Compound.svg" },
   { text: "Ideas", imgPath: "images/Ideas.svg" },
   { text: "Plastic", imgPath: "images/Plastic.svg" },
   { text: "River", imgPath: "images/River.svg" },
   { text: "pollution", imgPath: "images/Pollution.svg" },
   { text: "SDGs", imgPath: "images/SDG.svg" },
   { text: "Chemistry", imgPath: "images/Chemistry.svg" },
+];
+
+const GeographyWords = [
+  { text: "Geography", imgPath: "images/Geography.svg" },
+  { text: "Analyze", imgPath: "images/Analyze.svg" },
+  { text: "GIS", imgPath: "images/GIS.svg" },
+  { text: "Plastic", imgPath: "images/Plastic.svg" },
+  { text: "Research", imgPath: "images/Research.svg" },
+  { text: "River", imgPath: "images/River.svg" },
+  { text: "Pollution", imgPath: "images/Pollution.svg" },
+  { text: "SDGs", imgPath: "images/SDG.svg" },
+];
+
+const ChemistryWords = [
+  { text: "Chemistry", imgPath: "images/Chemistry.svg" },
+  { text: "Experiment", imgPath: "images/Experiment.svg" },
+  { text: "Atom", imgPath: "images/Atom.svg" },
+  { text: "Plastic", imgPath: "images/Plastic.svg" },
+  { text: "Research", imgPath: "images/Research.svg" },
+  { text: "H2O", imgPath: "images/Water.svg" },
+  { text: "Pollution", imgPath: "images/Pollution.svg" },
+  { text: "SDGs", imgPath: "images/SDG.svg" },
 ];
 
 const counterItems = [
@@ -17,7 +39,6 @@ const counterItems = [
 
 const navLinks = [
   { name: "Home", link: "/" },
-  { name: "Eco System", link: "/Ecosystem" },
   { name: "Grography", link: "/Geography" },
   { name: "Chemistry", link: "/Chemistry" },
   { name: "Reflection", link: "/Reflection" },
@@ -87,6 +108,23 @@ const expCards = [
   },
 ];
 
+const testimonials = [
+  {
+    name: "Titanum Dioxide",
+    mentions: "TiO₂",
+    review:
+      "Titanium Dioxide (TiO₂) is a white, naturally occurring oxide of titanium widely used in sunscreens, paints, and photocatalysis.",
+    imgPath: "/images/TiO2.png",
+  },
+  {
+    name: "Polyethylene Terephthalate",
+    mentions: "PET",
+    review:
+      "Polyethylene Terephthalate (PET) is a widely used thermoplastic polymer known for its strength, light weight, and chemical resistance. It is commonly found in plastic bottles, food containers, and synthetic fibers.",
+    imgPath: "/images/PET.png",
+  },
+];
+
 const socialImgs = [
   {
     name: "instagram",
@@ -100,9 +138,12 @@ const socialImgs = [
 
 export
 {
-    words,
+    HomeWords,
+    GeographyWords,
+    ChemistryWords,
     counterItems,
     navLinks,
     expCards,
-    socialImgs
+    socialImgs,
+    testimonials,
 };

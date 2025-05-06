@@ -1,6 +1,5 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home  from './pages/Home.jsx'
-import Ecosystem from './pages/Ecosystem.jsx'
 import Chemistry from './pages/Chemistry.jsx'
 import Geography from './pages/Geography.jsx'
 import Reflection from './pages/Reflection.jsx'
@@ -11,7 +10,6 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="*" element={<Home />}/>
-        <Route path="/Ecosystem" element={<Ecosystem />}/>
         <Route path="/Geography" element={<Geography />}/>
         <Route path="/Chemistry" element={<Chemistry />}/>
         <Route path="/Reflection" element={<Reflection />}/>

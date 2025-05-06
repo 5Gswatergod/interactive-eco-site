@@ -1,4 +1,4 @@
-import { words } from '../constants/index.js';
+import { HomeWords } from '../constants/index.js';
 import Button from '../components/Button.jsx';
 import HeroExperience from '../components/HeroModel/HeroExperience.jsx';
 import { useGSAP } from '@gsap/react';
@@ -8,6 +8,8 @@ import BgImg from '/images/bg.png';
 import NavBar from '../components/NavBar.jsx';
 import Timeline from '../sections/Timeline.jsx';
 import Footer from '../components/Footer.jsx';
+import IntroHome from '../sections/IntroHome.jsx';
+import TitleHeader from '../components/TitleHeader.jsx';
 
 const Home = () => {
     useGSAP(() => {
@@ -55,7 +57,7 @@ const Home = () => {
                                 Eco
                                 <span className="slide">
                                     <span className="wrapper">
-                                        {words.map((word) => (
+                                        {HomeWords.map((word) => (
                                             <span key={word.text} className="flex items-center md:gap-3 gap-1 pb-2">
                                                 <img
                                                     src={word.imgPath}
@@ -73,7 +75,7 @@ const Home = () => {
                         </div>
                         <Button 
                         className='md:w-80 md:h-16 w-60 h-12' 
-                        id="button"
+                        id="introHome"
                         text="Explore Project!"
                         />
                     </div>
@@ -85,7 +87,8 @@ const Home = () => {
                     </div>
                 </figure>
             </div>
-            
+            <IntroHome />
+            <TitleHeader title={"Team Member"} />
             <AnimatedCounter/>
             <Timeline />
             <Footer />
