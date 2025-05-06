@@ -108,6 +108,29 @@ const expCards = [
   },
 ];
 
+const reflectioncards = [
+  {
+    title: "What Did You Learn as a Group?",
+    description:
+      "We learned to effectively collaborate across disciplines—combining scientific research, interactive web development, and environmental awareness. We gained deeper insight into photocatalysis and plastic pollution while learning how to present complex issues engagingly."
+  },
+  {
+    title: "What Was Challenging?",
+    description:
+      "Balancing scientific accuracy with engaging web design was difficult. Technical issues with responsive layout, animation timing, and 3D/map integration posed significant challenges we had to overcome."
+  },
+  {
+    title: "How Did This Project Help You Grow?",
+    description:
+      "We became more confident in environmental science communication, improved in frontend development, and strengthened our team collaboration skills through problem-solving and shared responsibility."
+  },
+  {
+    title: "What Do You Want Others to Do After Seeing Your Site?",
+    description:
+      "We hope people will be more aware of plastic pollution, take steps to reduce plastic use, and support environmental initiatives. We also hope they share the site to amplify awareness and action."
+  }
+]
+
 const testimonials = [
   {
     name: "Titanum Dioxide",
@@ -144,6 +167,7 @@ export
     counterItems,
     navLinks,
     expCards,
+    reflectioncards,
     socialImgs,
     testimonials,
 };

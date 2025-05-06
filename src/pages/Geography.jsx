@@ -63,7 +63,7 @@ const Geography = () => {
           className="w-full object-cover"
         />
       </div>
-      <div className="hero-layout">
+      <div className="hero-layout-left">
           {/*LEFT: CONTENTS */}
           <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
               <div className="flex flex-col gap-7">
