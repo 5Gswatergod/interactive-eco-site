@@ -10,6 +10,9 @@ import ComExperience from '../components/ComModel/ComExperience.jsx'
 import Footer from '../components/Footer.jsx'
 import TitleHeader from '../components/TitleHeader.jsx'
 import CheProcedure from '../sections/CheProcedure.jsx'
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Chemistry = () => {
   useGSAP(() => {
@@ -23,9 +26,32 @@ const Chemistry = () => {
                 opacity: 1,
                 stagger: 0.2,
                 duration: 1,
-                ease: 'power2.out'
+                ease: 'power2.out',
+                scrollTrigger: {
+                  trigger: '.hero-text',
+                  start: 'top 95%',
+                  toggleActions: 'play none none reset',
+                },
             },
         )
+        gsap.fromTo('.hero-text p',
+            { 
+              y: 50, 
+              opacity: 0 
+            },
+            {
+              y: 0,
+              delay: 0.5,
+              opacity: 1,
+              duration: 1,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: '.hero-text',
+                start: 'top 90%',
+                toggleActions: 'play none none reset',
+              },
+            }
+        );
     })
 
   return (

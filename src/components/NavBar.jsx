@@ -79,10 +79,7 @@ const NavBar = () => {
                         onClick={(e) => {
                           e.preventDefault();
                           setMenuOpen(false);
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                          setTimeout(() => {
-                            navigate(link);
-                          }, 400); // delay allows scroll to complete
+                          navigate(link);
                         }}
                       >
                         {name}

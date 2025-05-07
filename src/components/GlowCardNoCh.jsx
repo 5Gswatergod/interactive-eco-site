@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-const GlowCard = ({card, children, index}) => {
+const GlowCardNoCh = ({ card, index }) => {
     const cardRefs = useRef([]);
 
     const handleMouseMove = (index) => (e) => {
@@ -22,13 +22,13 @@ const GlowCard = ({card, children, index}) => {
     <div className="mobile-glow-edge">
       <div ref={(el) => (cardRefs.current[index] = el)} onMouseMove={handleMouseMove(index)} className='card card-border timeline-card rounded-xl p-10'>
           <div className='glow' />
-          <div className='mb-5'>
-              <p className='text-white-50 text-lg'>{card.review}</p>
+          <div className='mb-3'>
+            <h3 className='text-white text-xl font-bold mb-1'>{card.title}</h3>
+            <p className='text-white/70 text-sm'>{card.description}</p>
           </div>
-          {children}
       </div>
     </div>
   )
 }
 
-export default GlowCard
+export default GlowCardNoCh

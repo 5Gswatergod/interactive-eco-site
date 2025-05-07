@@ -4,10 +4,12 @@ import Chemistry from './pages/Chemistry.jsx'
 import Geography from './pages/Geography.jsx'
 import Reflection from './pages/Reflection.jsx'
 import Resources from './pages/Resources.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="*" element={<Home />}/>
         <Route path="/Geography" element={<Geography />}/>

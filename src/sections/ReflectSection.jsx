@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import GlowCard from '../components/GlowCard'
+import GlowCardNoCh from '../components/GlowCardNoCh.jsx'
 import TitleHeader from '../components/TitleHeader'
 import { reflectioncards } from '../constants/index.js'
 
@@ -22,14 +22,14 @@ const ReflectSection = () => {
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {reflectioncards.map((card) => (
-              <div key={card.title} className="exp-card-wrapper">
+              <div key={card.title} className="flex-center">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
+                  <GlowCardNoCh card={card}>
                     <div>
                       <h3 className='text-2xl font-bold text-white mt-2 underline'>{card.title}</h3>
                       <p className='text-white mt-2'>{card.description}</p>
                     </div>
-                  </ GlowCard>
+                  </ GlowCardNoCh>
                 </div>
               </div>
             ))}

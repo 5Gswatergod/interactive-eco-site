@@ -1,11 +1,50 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const GeoRiver = () => {
+  const textRef = useRef(null)
+  const mapRef = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(textRef.current,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reset',
+        }
+      }
+    )
+
+    gsap.fromTo(mapRef.current,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: mapRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reset',
+        }
+      }
+    )
+  }, [])
+
   return (
     <section id='river' className="py-16 px-6 md:px-20">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
         {/* Text Section */}
-        <div className="md:w-1/2 text-left">
+        <div ref={textRef} className="md:w-1/2 text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6">
             River Introduction
           </h2>
@@ -20,7 +59,7 @@ const GeoRiver = () => {
         </div>
 
         {/* Map Section */}
-        <div className="md:w-1/2 w-full h-[300px] md:h-[400px]">
+        <div ref={mapRef} className="md:w-1/2 w-full h-[300px] md:h-[400px]">
           <iframe
             title="Huajiang Bridge Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18376.006123177885!2d121.47603152594841!3d25.03569854651968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a85222836697%3A0xebfe0089b7d32e2a!2sHuajiang%20Bridge!5e1!3m2!1sen!2stw!4v1746502036087!5m2!1sen!2stw"

@@ -3,6 +3,8 @@ import Button from '../components/Button.jsx';
 import HeroExperience from '../components/HeroModel/HeroExperience.jsx';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 import AnimatedCounter from '../components/AnimatedCounter.jsx';
 import BgImg from '/images/bg.png';
 import NavBar from '../components/NavBar.jsx';
@@ -23,7 +25,12 @@ const Home = () => {
                 opacity: 1,
                 stagger: 0.2,
                 duration: 1,
-                ease: 'power2.out'
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.hero-text',
+                    start: 'top 80%',
+                    toggleActions: 'play none none reset',
+                }
             },
         )
         gsap.fromTo('.hero-text p',
@@ -36,7 +43,12 @@ const Home = () => {
                 delay: 0.5,
                 opacity: 1,
                 duration: 1,
-                ease: 'power2.out'
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.hero-text',
+                    start: 'top 80%',
+                    toggleActions: 'play none none reset',
+                }
             },
         )
     })
