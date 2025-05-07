@@ -6,4 +6,16 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   base: process.env.NODE_ENV === "production" ? "" : "/",
   plugins: [react(), tailwindcss()],
+  build: {
+    chunkSizeWarningLimit: 1500,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          gsap: ['gsap'],
+          three: ['three'],
+        },
+      },
+    },
+  },
 });
