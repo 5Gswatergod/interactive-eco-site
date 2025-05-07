@@ -32,7 +32,7 @@ const ChemistryWords = [
 ];
 
 const counterItems = [
-  { label: 1, job: "Art Director", name: "Inpug", surname: "Chen" },
+  { label: 1, job: "Art Director", name: "Ipung", surname: "Chen" },
   { label: 2, job: "Project Reasercher", name: "Eric", surname: "Tzeng" },
   { label: 3, job: "Website Engineer", name: "Eason", surname: "Lo" },
 ];
