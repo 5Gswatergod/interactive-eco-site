@@ -140,10 +140,12 @@ const socialImgs = [
   {
     name: "instagram",
     imgPath: "images/Instagram.jpg",
+    link: "https://www.instagram.com/vis_betterworldlab/",
   },
   {
     name: "mail",
     imgPath: "images/gmail.jpg",
+    link: "mailto:eason.lo@vis.tp.edu.tw",
   },
 ];
 

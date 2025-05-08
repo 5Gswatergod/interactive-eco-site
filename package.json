@@ -19,6 +19,7 @@
     "@react-three/postprocessing": "^3.0.4",
     "@tailwindcss/vite": "^4.1.4",
     "gsap": "^3.12.7",
+    "mailto": "^0.1.2",
     "motion": "^12.9.7",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
