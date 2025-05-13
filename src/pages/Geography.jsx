@@ -94,11 +94,13 @@ const Geography = () => {
               </div>
           </header>
       </div>
-      <TitleHeader title={"XinDian River"} />
-      <GeoRiver />
-      <TitleHeader title={"Pollution"} />
-      <GeoPollution />
-      <Footer />
+      <div className="relative z-50">
+        <TitleHeader title={"XinDian River"} />
+        <GeoRiver />
+        <TitleHeader title={"Pollution"} />
+        <GeoPollution />
+        <Footer />
+      </div>
     </section>
   )
 }

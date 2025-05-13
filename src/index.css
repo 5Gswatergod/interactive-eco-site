@@ -1133,24 +1133,19 @@ section {
         z-index: 10;
         margin-top: calc(var(--spacing) * 20);
         display: flex;
-        height: 80vh;
+        height: auto;
         align-items: flex-start;
         justify-content: center;
 
         @media (width >=48rem) {
             margin-top: calc(var(--spacing) * 32);
-        }
-
-        @media (width >=48rem) {
-            height: 100dvh;
+            height: 50dvh;
         }
 
         @media (width >=80rem) {
             margin-top: calc(var(--spacing) * 20);
-        }
-
-        @media (width >=80rem) {
             align-items: center;
+            height: 100dvh;
         }
     }
 
@@ -2443,5 +2438,14 @@ section {
             --tw-scale-z: 1;
             --tw-space-x-reverse: 0;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column;
+        height: 40dvh;
+        align-items: center;
+        padding-bottom: calc(var(--spacing) * 10);
     }
 }

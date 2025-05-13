@@ -17,9 +17,9 @@ const ReflectSection = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-16 px-6 md:px-20">
-      <TitleHeader title="Reflection" subtitle="What We Learned" />
+    <section ref={sectionRef} >
         <div className="mt-32 relative">
+          <TitleHeader title="Reflection" subtitle="What We Learned" />
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {reflectioncards.map((card) => (
               <div key={card.title} className="flex-center">

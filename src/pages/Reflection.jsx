@@ -1,12 +1,13 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import ReflectSection from '../sections/ReflectSection'
+import TitleHeader from '../components/TitleHeader'
 
 const Reflection = () => {
   return (
-    <main id='reflection' className='relative min-h-screen'>
+    <main id='reflection' className='relative'>
       <NavBar />
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="flex-center flex-col">
         <ReflectSection />
       </div>
     </main>
