@@ -1133,13 +1133,13 @@ section {
         z-index: 10;
         margin-top: calc(var(--spacing) * 20);
         display: flex;
-        height: auto;
+        height: 60dvh;
         align-items: flex-start;
         justify-content: center;
 
         @media (width >=48rem) {
             margin-top: calc(var(--spacing) * 32);
-            height: 50dvh;
+            height: 70dvh;
         }
 
         @media (width >=80rem) {

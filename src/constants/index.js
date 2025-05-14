@@ -39,7 +39,7 @@ const counterItems = [
 
 const navLinks = [
   { name: "Home", link: "/" },
-  { name: "Grography", link: "/Geography" },
+  { name: "Geography", link: "/Geography" },
   { name: "Chemistry", link: "/Chemistry" },
   { name: "Reflection", link: "/Reflection" },
   { name: "Resources", link: "/Resources" },
