@@ -11,6 +11,7 @@ import Footer from '../components/Footer.jsx'
 import TitleHeader from '../components/TitleHeader.jsx'
 import CheProcedure from '../sections/CheProcedure.jsx'
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Plastic from '../sections/Plastic.jsx'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,6 +102,7 @@ const Chemistry = () => {
       <Testimonials />
       <TitleHeader title={'Experiement'} />
       <CheProcedure />
+      <Plastic />
       <Footer />
     </section>
   )
