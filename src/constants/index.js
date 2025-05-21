@@ -28,7 +28,7 @@ const ChemistryWords = [
   { text: "Research", imgPath: "images/Research.svg" },
   { text: "H2O", imgPath: "images/Water.svg" },
   { text: "Pollution", imgPath: "images/Pollution.svg" },
-  { text: "SDGs", imgPath: "images/SDG.svg" },
+  { text: "SDG-14", imgPath: "images/SDG.svg" },
 ];
 
 const counterItems = [
