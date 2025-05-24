@@ -11,7 +11,7 @@ const Resources = () => {
             <img src={BgImg} alt="Background" />
         </div>
 
-        <div className="hero-layout grid grid-cols-1 md:grid-cols-2 gap-10 px-5 md:px-20 w-full items-start">
+        <div className="hero-layout grid grid-cols-1 md:grid-cols-2 gap-10 px-5 md:px-20 w-full items-start top-30">
             {/*LEFT: CONTENTS */}
             <header className="flex flex-col justify-center items-start md:items-start">
                 <div className="flex flex-col gap-7">
