@@ -68,6 +68,17 @@ const Resources = () => {
                   https://wq.moenv.gov.tw/EWQP/en/EnvWaterMonitoring/River.aspx
                 </a>.
               </p>
+              <p>
+                Certified Germ, Control, ed. “How Photocatalysis Works with TiO2.” YouTube, December 21, 2020.{' '}
+                <a
+                href="https://youtu.be/6PIPXIyL_ms?feature=shared"
+                className="text-blue-600 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                https://youtu.be/6PIPXIyL_ms?feature=shared
+                </a>.
+              </p>
             </div>
         </div>
         <Footer />
